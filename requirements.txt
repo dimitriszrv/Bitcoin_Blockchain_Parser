@@ -1,0 +1,5 @@
+base58
+hashlib
+binascii
+alive-progress
+mysql-connector-python
