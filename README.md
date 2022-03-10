@@ -45,14 +45,14 @@ $ python3 Main.py
 
 - You will be asked where blk files at, make sure you give the full input path.</br>
 - Also you will be asked if you want to keep or delete blk_files, answer must by y/n.</br>
-<img align="center" src="https://user-images.githubusercontent.com/17187213/157711065-eba65550-b8df-4cdf-bc58-9732484dc119.png" width=75% height=50%></br></br>
+<img align="center" src="https://user-images.githubusercontent.com/17187213/157711065-eba65550-b8df-4cdf-bc58-9732484dc119.png"></br></br>
 - Give the full export path where data will be saved.</br>
-<img align="center" src="https://user-images.githubusercontent.com/17187213/157712194-8b9ce74f-03a8-4382-aad8-890ffcabb488.png" width=75% height=50%></br></br>
+<img align="center" src="https://user-images.githubusercontent.com/17187213/157712194-8b9ce74f-03a8-4382-aad8-890ffcabb488.png"></br></br>
 - Connecting to database, loading data and start readdressing.</br>
-<img align="center" src="https://user-images.githubusercontent.com/17187213/157712201-71894d29-dca2-4761-8028-44c07aaadd1d.png" width=75% height=50%>
-<img align="center" src="https://user-images.githubusercontent.com/17187213/157712210-1bbc1593-2009-4422-9b42-ae824785ac81.png" width=75% height=50%>
-<img align="center" src="https://user-images.githubusercontent.com/17187213/157712227-b91e7e8a-e6aa-46bf-8dd3-9ef9d2d3e274.png" width=75% height=50%>
-<img align="center" src="https://user-images.githubusercontent.com/17187213/157712238-7205ef38-bc11-4a5c-bc2c-33e184e1c8e0.png" width=75% height=50%></br>
+<img align="center" src="https://user-images.githubusercontent.com/17187213/157712201-71894d29-dca2-4761-8028-44c07aaadd1d.png">
+<img align="center" src="https://user-images.githubusercontent.com/17187213/157712210-1bbc1593-2009-4422-9b42-ae824785ac81.png">
+<img align="center" src="https://user-images.githubusercontent.com/17187213/157712227-b91e7e8a-e6aa-46bf-8dd3-9ef9d2d3e274.png">
+<img align="center" src="https://user-images.githubusercontent.com/17187213/157712238-7205ef38-bc11-4a5c-bc2c-33e184e1c8e0.png"></br>
 
 - After parsing data, because MySQL has some restrictions and limitations, must give full permissions to json file created with (ex):
 ```bash 
