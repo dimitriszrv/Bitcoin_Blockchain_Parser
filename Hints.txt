@@ -80,7 +80,7 @@ $ service apparmor restart
 
 5. Ready to run Bitcoin Blockchain parser
 
-> Make sure host, user & password fields are correct at class Database.py : line 25
+> Make sure host, user & password fields are correct at class Database.py : line 19
 > Execute script located in /Bitcoin_Blockchain_Parser/blk_parser/ in by:
 
 $ python3 Main.py
