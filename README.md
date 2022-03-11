@@ -56,7 +56,7 @@ $ python3 Main.py
 
 - After parsing data, because MySQL has some restrictions and limitations, must give full permissions to json file created with (ex):
 ```bash 
-sudo chmod 777 ~/full_path/Bitcoin_Transactions/bitcoin_info.json
+$ sudo chmod 777 ~/full_path/Bitcoin_Transactions/bitcoin_info.json
 ```
 
 ## Dataset
