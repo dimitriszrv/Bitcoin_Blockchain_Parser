@@ -29,7 +29,7 @@ The process of readdressing is done using MySQL in order to find the missing sen
 
 ## Getting started 
 #### Prerequisites
-- Some libraries need to be installed using Python3, run:</br>
+- Install the required libraries using Python3, run:</br>
 ```bash
 $ pip3 install -r requirements.txt
 ```
@@ -43,8 +43,8 @@ $ python3 Main.py
 ```
 ---
 
-- You will be asked where blk files at, make sure you give the full input path.</br>
-- Also you will be asked if you want to keep or delete blk_files, answer must by y/n.</br>
+- You will be asked where blk files at, make sure to give the full input path.</br>
+- Also you will be asked if you want to keep or delete blk_files, answer must be y/n.</br>
 <img align="center" src="https://user-images.githubusercontent.com/17187213/157711065-eba65550-b8df-4cdf-bc58-9732484dc119.png"></br></br>
 - Give the full export path where data will be saved.</br>
 <img align="center" src="https://user-images.githubusercontent.com/17187213/157712194-8b9ce74f-03a8-4382-aad8-890ffcabb488.png"></br></br>
