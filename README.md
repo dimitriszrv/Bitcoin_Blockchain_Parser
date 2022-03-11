@@ -1,5 +1,5 @@
 # Bitcoin_Blockchain_Parser 
-This script aimed to parse raw Bitcoin Blockchain transactions.</br>
+This script aims to parse raw Bitcoin Blockchain transactions.</br>
 Master's Thesis on Dept. of <a href="https://www.cs.uoi.gr/?lang=en">Computer Science & Engineering</a>, University of Ioannina, Greece.
 
 ## About
@@ -54,7 +54,7 @@ $ python3 Main.py
 <img align="center" src="https://user-images.githubusercontent.com/17187213/157712227-b91e7e8a-e6aa-46bf-8dd3-9ef9d2d3e274.png">
 <img align="center" src="https://user-images.githubusercontent.com/17187213/157712238-7205ef38-bc11-4a5c-bc2c-33e184e1c8e0.png"></br>
 
-- After parsing data, because MySQL has some restrictions and limitations, must give full permissions to json file created with (ex):
+- After parsing data, because MySQL has some restrictions and limitations, full permissions must be given to json file created with (ex):
 ```bash 
 $ sudo chmod 777 ~/full_path/Bitcoin_Transactions/bitcoin_info.json
 ```
