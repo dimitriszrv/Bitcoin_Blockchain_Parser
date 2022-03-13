@@ -73,3 +73,8 @@ Dataset is saved at selected export path at **bitcoin_info.json** file.
 
 ## Licence
 This project is licensed under the terms of the <a href="https://github.com/dimitriszrv/Bitcoin_Blockchain_Parser/blob/main/LICENSE"> GNU GPL v3.0</a>.
+
+- #### Find me: zervasdm@gmail.com
+
+- #### Donate (BTC): bc1q9gr9xe802zujwwrhswgty4awz8wellkkkal3w7
+
