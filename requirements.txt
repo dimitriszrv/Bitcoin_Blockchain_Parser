@@ -1,0 +1,3 @@
+base58
+alive-progress
+mysql-connector-python
