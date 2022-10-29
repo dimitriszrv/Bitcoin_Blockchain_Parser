@@ -12,9 +12,9 @@ However, inputs don't contain info about the sender address but a pointer to a p
 For example, 
 ```
 > in transaction with tx_id_1: a16f3ce4dd5deb92d98ef5cf8afeaf0775ebca408f708b2146c4fb42b41e14be
-~ inputs is:  {btc_address: NO_ADDRESS,
-               previous_tx_id: f4184fc596403b9d638783cf57adfe4c75c605f6356fbc91338530e9831e9e16,
-               previous_tx_index: 1}},
+~ inputs:  {btc_address: NO_ADDRESS,
+            previous_tx_id: f4184fc596403b9d638783cf57adfe4c75c605f6356fbc91338530e9831e9e16,
+            previous_tx_index: 1}},
              
 > in transaction with tx_id_2: f4184fc596403b9d638783cf57adfe4c75c605f6356fbc91338530e9831e9e16
 ~ outputs: [{btc_value: 10.0, btc_address: 1Q2TWHE3GMdB6BZKafqwxXtWAWgFt5Jvm3},
