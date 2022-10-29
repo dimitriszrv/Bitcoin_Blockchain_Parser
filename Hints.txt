@@ -1,0 +1,111 @@
+Bitcoin Blockchain Parser by Dimitrios Zervas
+
+# Some changes need to be done for MySQL
+
+
+1. Install required libraries
+
+> Some libraries need to be install to decode the data so run on terminal:
+
+$ pip3 install -r requirements.txt
+------------------------------------------------------------------------------------
+
+
+2. Install MySQL Server (IF not installed)
+
+> Fire up the terminal and update the apt repository cache before installing MySQL:
+
+$ sudo apt update
+
+> Next, install the MySQL server with the command:
+
+$ sudo apt install mysql-server
+
+> Once the MySQL server is successfully installed, check the installed version and 
+verify the installation using the command:
+
+$ mysql --version
+
+> Upon successful installation, the MySQL service will start automatically. To check
+the status of the MySQL server, run the command:
+
+$ sudo systemctl status mysql
+
+> Now, let's configure the MySQL
+
+$ sudo mysql_secure_installation
+
+> Select the password level by entering the respective numeric digit
+> Press’ y or n’ according to your choice, and the configuration will be performed successfully.
+
+> It's time to create a new user
+
+$ sudo mysql
+
+mysql> CREATE USER user_name@'localhost' IDENTIFIED BY 'password';
+
+> The *.* will grant all types of privileges to the newly created user.
+
+mysql> GRANT ALL PRIVILEGES ON *.* TO user_name@'localhost';
+mysql> FLUSH PRIVILEGES;
+------------------------------------------------------------------------------------
+
+
+3. Create a directory to save the data and give the permissions needed
+
+> Ex if you want to save into Desktop and Bitcoin_Transactions folder, 
+run on terminal:
+
+$ sudo mkdir ~/Desktop/Bitcoin_Transactions/
+and directory 'Bitcoin_Transactions' will be created
+
+> Now give full permissions:
+
+$ sudo chown mysql:mysql ~/Desktop/Bitcoin_Transactions/
+$ sudo chmod 777 ~/Desktop/Bitcoin_Transactions/
+------------------------------------------------------------------------------------
+
+
+4. Update AppArmor (Linux kernel security module)
+
+$ sudo gedit[or vi] /etc/apparmor.d/usr.sbin.mysqld
+
+> Add   /full_path/Desktop/Bitcoin_Transactions/ r,
+        /full_path/Desktop/Bitcoin_Transactions/* rwk,
+> Save and run:
+
+$ service apparmor restart
+------------------------------------------------------------------------------------
+
+
+5. Ready to run Bitcoin Blockchain parser
+
+> Make sure host, user & password fields are correct at class Database.py : line 19
+> Execute script located in /Bitcoin_Blockchain_Parser/blk_parser/ in by:
+
+$ python3 Main.py
+
+> After parsing, give full permissions to json file created at:
+        /full_path/Desktop/Bitcoin_Transactions/
+
+$ sudo chmod 777 ~/Desktop/Bitcoin_Transactions/bitcoin_info.json
+------------------------------------------------------------------------------------
+
+
+[Skip below]
+
+6. If --secure-file-priv error
+
+$ sudo gedit[or vi] '/etc/mysql/mysql.conf.d/mysqld.cnf'
+
+> Add secure_file_priv="" at the end of the file, save & restart
+$ sudo service mysql restart
+------------------------------------------------------------------------------------
+
+
+7. Disable LogBins for MySQL
+
+$ sudo gedit[or vi] '/etc/mysql/mysql.conf.d/mysqld.cnf'
+> Add disable_log_file at the end of the file, save & restart
+$ sudo service mysql restart
+------------------------------------------------------------------------------------
